@@ -1,0 +1,72 @@
+@media (min-width: 1024px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Меняем порядок секций для десктопа */
+    .table-section {
+        order: 2;
+    }
+
+    .links-section {
+        order: 1;
+    }
+
+
+    .header__content {
+        padding: 0;
+    }
+
+    .nav {
+        padding: 1rem 0;
+    }
+
+    .section__title {
+        font-size: 2rem;
+    }
+
+    .form {
+        max-width: 600px;
+    }
+
+    /* Меняем порядок ссылок в навигации */
+    .nav__link:nth-child(1) {
+        /* Полезные ссылки */
+        order: 2;
+    }
+
+    .nav__link:nth-child(2) {
+        /* Наши питомцы */
+        order: 1;
+    }
+
+    .nav__link:nth-child(3) {
+        /* Заявка на опеку */
+        order: 3;
+    }
+
+    #mobile-nav {
+        display: none;
+    }
+
+    #desctop-nav {
+        display: inherit;
+    }
+
+    .nav {
+        width: auto;
+        padding: 10px;
+        display: flex;
+        flex-direction: inherit;
+        gap: 5px;
+    }
+
+    .header {
+        justify-content: space-around;
+    }
+
+    .header__content {
+        margin: 0;
+    }
+}

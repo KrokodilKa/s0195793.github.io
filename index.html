@@ -6,72 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The best website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="desktop.css" media="(min-width: 1024px)">
 </head>
 
 <body>
-    <header id="header">
-                <img id="dog-logo" src="./dog.jpg" alt="Логотип">
-            <nav class="nav-menu">
-                <a href="#links-section">Гиперссылки</a>
-                <a href="#table-section">Таблица</a>
-                <a href="#form-section">Форма</a>
-            </nav>
+    <header class="header">
+        <div class="header__content">
+            <img class="logo" src="./dog.jpg" alt="Логотип собаки">
+            <h1 class="site-title">Pet Friends</h1>
+        </div>
+        <nav id="desctop-nav" class="nav">
+            <a href="#table-section" class="nav__link">Наши питомцы</a>
+            <a href="#links-section" class="nav__link">Полезные ссылки</a>
+            <a href="#form-section" class="nav__link">Заявка на опеку</a>
+        </nav>
     </header>
 
-    <main>
-        <section id="links-section" class="container">
-            <h2>Гиперссылки</h2>
-            <ul>
-                <li>
-                    <a href="http://kubsu.ru/">http протокол на kubsu.ru</a>
+    <nav id="mobile-nav" class="nav">
+        <a href="#table-section" class="nav__link">Наши питомцы</a>
+        <a href="#links-section" class="nav__link">Полезные ссылки</a>
+        <a href="#form-section" class="nav__link">Заявка на опеку</a>
+    </nav>
+
+    <main class="main">
+
+
+        <section id="links-section" class="section links-section">
+            <h2 class="section__title">Полезные ссылки</h2>
+            <ul class="links-list">
+                <li class="links-list__item">
+                    <a href="http://kubsu.ru/" class="link">http протокол на kubsu.ru</a>
                 </li>
-                <li>
-                    <a href="https://kubsu.ru/">https протокол на kubsu.ru</a>
+                <li class="links-list__item">
+                    <a href="https://kubsu.ru/" class="link">https протокол на kubsu.ru</a>
                 </li>
-                <li>
-                    <a href="https://www.youtube.com">
-                        <img src="./image.jpg" alt="Картинка" style="width: 100px; background-color: yellow;"></a>
+                <li class="links-list__item">
+                    <a href="https://www.youtube.com" class="link">
+                        <img src="./image.jpg" alt="Картинка" class="link-image">
+                    </a>
                 </li>
-                <li>
-                    <a href="/inside">Сокращенная ссылка на внутреннюю страницу</a>
+                <li class="links-list__item">
+                    <a href="/inside" class="link">Сокращенная ссылка на внутреннюю страницу</a>
                 </li>
-                <li>
-                    <a href="/">Сокращенная ссылка на главную страницу</a>
+                <li class="links-list__item">
+                    <a href="/" class="link">Сокращенная ссылка на главную страницу</a>
                 </li>
-                <li>
-                    <a href="#fragment">Ссылка на фрагмент текущей страницы</a>
+                <li class="links-list__item">
+                    <a href="#fragment" class="link">Ссылка на фрагмент текущей страницы</a>
                 </li>
-                <li>
-                    <a href="https://www.youtube.com/intl/ALL_ru/ads/youtube-for-small-business/?a=a&b=b&c=c">Ссылка
-                        с тремя параметрами в URL</a>
+                <li class="links-list__item">
+                    <a href="https://www.youtube.com/intl/ALL_ru/ads/youtube-for-small-business/?a=a&b=b&c=c"
+                        class="link">
+                        Ссылка с тремя параметрами в URL
+                    </a>
                 </li>
-                <li>
-                    <a href="https://www.youtube.com/intl/ALL_ru/ads/youtube-for-small-business/?id=pupupu">Ссылка с
-                        параметром
-                        id в URL</a>
+                <li class="links-list__item">
+                    <a href="https://www.youtube.com/intl/ALL_ru/ads/youtube-for-small-business/?id=pupupu"
+                        class="link">
+                        Ссылка с параметром id в URL
+                    </a>
                 </li>
-                <li>
-                    <a href="inside.html">Относительная на страницу в текущем каталоге</a>
+                <li class="links-list__item">
+                    <a href="inside.html" class="link">Относительная на страницу в текущем каталоге</a>
                 </li>
-                <li>
-                    <a href="about/index.html">Относительная на страницу в каталоге about</a>
+                <li class="links-list__item">
+                    <a href="about/index.html" class="link">Относительная на страницу в каталоге about</a>
                 </li>
-                <li>
-                    <p>Контекстная в тексте абзаца:
-                        <a href="https://www.youtube.com/intl/ALL_ru/ads/youtube-for-small-business/">
+                <li class="links-list__item">
+                    <p class="paragraph">
+                        Контекстная в тексте абзаца:
+                        <a href="https://www.youtube.com/intl/ALL_ru/ads/youtube-for-small-business/" class="link">
                             YouTube для малого бизнеса
                         </a>
                     </p>
                 </li>
-                <li>
-                    <a href="https://www.youtube.com/intl/ALL_ru/ads/youtube-for-small-business/#some">Ссылка на
-                        фрагмент
-                        страницы стороннего сайта</a>
+                <li class="links-list__item">
+                    <a href="https://www.youtube.com/intl/ALL_ru/ads/youtube-for-small-business/#some" class="link">
+                        Ссылка на фрагмент страницы стороннего сайта
+                    </a>
                 </li>
-                <li>
+                <li class="links-list__item">
                     Ссылки из прямоугольных и круглых областей картинки:
-                    <img src="./image.jpg" style="width: 200px; background-color: yellow;" alt="Ещё картинка"
-                        usemap="#rect">
+                    <img src="./image.jpg" alt="Ещё картинка" class="image-map" usemap="#rect">
                     <map name="rect">
                         <area shape="rect" coords="0,0,50,50"
                             href="https://www.youtube.com/intl/ALL_ru/ads/youtube-for-small-business/"
@@ -80,172 +96,183 @@
                             alt="Круглая область">
                     </map>
                 </li>
-                <li>
-                    <a href="">Ссылка с пустым href</a>
+                <li class="links-list__item">
+                    <a href="" class="link">Ссылка с пустым href</a>
                 </li>
-                <li>
-                    <a>Ссылка без href</a>
+                <li class="links-list__item">
+                    <a class="link">Ссылка без href</a>
                 </li>
-                <li>
-                    <a href="https://www.youtube.com/intl/ALL_ru/ads/youtube-for-small-business/" rel="nofollow">Ссылка,
-                        по
-                        которой запрещен переход поисковикам</a>
+                <li class="links-list__item">
+                    <a href="https://www.youtube.com/intl/ALL_ru/ads/youtube-for-small-business/" rel="nofollow"
+                        class="link">
+                        Ссылка, по которой запрещен переход поисковикам
+                    </a>
                 </li>
-                <li>
-                    <a href="https://www.youtube.com/intl/ALL_ru/ads/youtube-for-small-business/"
-                        rel="noindex">Запрещенная для
-                        индексации поисковиками</a>
+                <li class="links-list__item">
+                    <a href="https://www.youtube.com/intl/ALL_ru/ads/youtube-for-small-business/" rel="noindex"
+                        class="link">
+                        Запрещенная для индексации поисковиками
+                    </a>
                 </li>
-                <li>
+                <li class="links-list__item">
                     Нумерованный список ссылок с подписями title:
-                    <ol>
-                        <li>
+                    <ol class="numbered-list">
+                        <li class="numbered-list__item">
                             <a href="https://www.youtube.com/intl/ALL_ru/ads/youtube-for-small-business/"
-                                title="YouTube для малого бизнеса">Клик на ссылку</a>
+                                title="YouTube для малого бизнеса" class="link">Клик на ссылку</a>
                         </li>
-                        <li>
+                        <li class="numbered-list__item">
                             <a href="https://www.youtube.com/intl/ALL_ru/ads/youtube-for-small-business/"
-                                title="Маркетинг на YouTube">Клик на ссылку</a>
+                                title="Маркетинг на YouTube" class="link">Клик на ссылку</a>
                         </li>
-                        <li>
+                        <li class="numbered-list__item">
                             <a href="https://www.youtube.com/intl/ALL_ru/ads/youtube-for-small-business/"
-                                title="Реклама на платформе">Клик на ссылку</a>
+                                title="Реклама на платформе" class="link">Клик на ссылку</a>
                         </li>
                     </ol>
                 </li>
-                <li>
-                    <a href="ftp://login:pass@fileaddress/somebody.txt">Ссылка на файл на сервере FTP с авторизацией</a>
+                <li class="links-list__item">
+                    <a href="ftp://login:pass@fileaddress/somebody.txt" class="link">
+                        Ссылка на файл на сервере FTP с авторизацией
+                    </a>
                 </li>
             </ul>
         </section>
 
-        <section id="table-section" class="container">
-            <h2>Табличка</h2>
-            <table class="data-table">
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Название</th>
-                        <th>Категория</th>
-                        <th>Статус</th>
-                        <th>Дата создания</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Проект А</td>
-                        <td>Веб-разработка</td>
-                        <td>Активный</td>
-                        <td>2023-01-15</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Проект Б</td>
-                        <td>Дизайн</td>
-                        <td>Завершен</td>
-                        <td>2023-02-20</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td colspan="2">Специальный проект</td>
-                        <td>В процессе</td>
-                        <td>2023-03-10</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Проект В</td>
-                        <td>Мобильная разработка</td>
-                        <td>Активный</td>
-                        <td>2023-04-05</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Проект Г</td>
-                        <td>Веб-разработка</td>
-                        <td>Завершен</td>
-                        <td>2023-05-12</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2">6-7</td>
-                        <td>Общий проект</td>
-                        <td>Дизайн</td>
-                        <td>В процессе</td>
-                        <td>2023-06-18</td>
-                    </tr>
-                </tbody>
-            </table>
+
+        <section id="table-section" class="section table-section">
+            <h2 class="section__title">Наши питомцы</h2>
+            <div class="table-container">
+                <table class="pets-table">
+                    <thead>
+                        <tr>
+                            <th>Кличка</th>
+                            <th>Вид</th>
+                            <th>Порода</th>
+                            <th>Возраст</th>
+                            <th>Статус</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Барсик</td>
+                            <td>Кот</td>
+                            <td>Британский</td>
+                            <td>2 года</td>
+                            <td>Ищет дом</td>
+                        </tr>
+                        <tr>
+                            <td>Шарик</td>
+                            <td>Собака</td>
+                            <td>Лабрадор</td>
+                            <td>4 года</td>
+                            <td>На передержке</td>
+                        </tr>
+                        <tr>
+                            <td>Мурка</td>
+                            <td>Кошка</td>
+                            <td>Дворовая</td>
+                            <td>1 год</td>
+                            <td>Ищет дом</td>
+                        </tr>
+                        <tr>
+                            <td>Гав</td>
+                            <td>Собака</td>
+                            <td>Овчарка</td>
+                            <td>3 года</td>
+                            <td>Лечение</td>
+                        </tr>
+                        <tr>
+                            <td>Рыжик</td>
+                            <td>Кот</td>
+                            <td>Персидский</td>
+                            <td>5 лет</td>
+                            <td>Ищет дом</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">Братья</td>
+                            <td>Щенки</td>
+                            <td>Дворняжки</td>
+                            <td>2 месяца</td>
+                            <td>Ищут дом</td>
+                        </tr>
+                        <tr>
+                            <td>Щенки</td>
+                            <td>Дворняжки</td>
+                            <td>2 месяца</td>
+                            <td>Ищут дом</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
 
-        <section id="form-section" class="container">
-            <h2>Форма</h2>
-            <form>
-                <div>
-                    <label for="fio">ФИО:</label>
-                    <input type="text" id="fio" name="fio" required>
+
+        <section id="form-section" class="section form-section">
+            <h2 class="section__title">Заявка на опеку</h2>
+            <form class="form">
+                <div class="form__group">
+                    <label for="fio" class="form__label">ФИО:</label>
+                    <input type="text" id="fio" name="fio" class="form__input" required>
                 </div>
 
-                <div>
-                    <label for="phone">Телефон:</label>
-                    <input type="tel" id="phone" name="phone" required>
+                <div class="form__group">
+                    <label for="phone" class="form__label">Телефон:</label>
+                    <input type="tel" id="phone" name="phone" class="form__input" required>
                 </div>
 
-                <div>
-                    <label for="email">e-mail:</label>
-                    <input type="email" id="email" name="email" required>
+                <div class="form__group">
+                    <label for="email" class="form__label">e-mail:</label>
+                    <input type="email" id="email" name="email" class="form__input" required>
                 </div>
 
-                <div>
-                    <label for="birthdate">Дата рождения:</label>
-                    <input type="date" id="birthdate" name="birthdate" required>
+                <div class="form__group">
+                    <label for="birthdate" class="form__label">Дата рождения:</label>
+                    <input type="date" id="birthdate" name="birthdate" class="form__input" required>
                 </div>
 
-                <fieldset>
-                    <legend>Пол</legend>
-                    <label><input type="radio" name="gender" value="male" required> Мужской</label>
-                    <label><input type="radio" name="gender" value="female" required> Женский</label>
+                <fieldset class="form__fieldset">
+                    <legend class="form__legend">Пол</legend>
+                    <label class="form__radio-label">
+                        <input type="radio" name="gender" value="male" class="form__radio" required>
+                        Мужской
+                    </label>
+                    <label class="form__radio-label">
+                        <input type="radio" name="gender" value="female" class="form__radio" required>
+                        Женский
+                    </label>
                 </fieldset>
 
-                <div>
-                    <label for="langs">Любимый язык программирования:</label>
-                    <select id="langs" name="langs" multiple required>
-                        <option value="pascal">Pascal</option>
-                        <option value="c">C</option>
-                        <option value="cpp">C++</option>
-                        <option value="javascript">JavaScript</option>
-                        <option value="php">PHP</option>
-                        <option value="python">Python</option>
-                        <option value="java">Java</option>
-                        <option value="haskel">Haskel</option>
-                        <option value="clojure">Clojure</option>
-                        <option value="prolog">Prolog</option>
-                        <option value="scala">Scala</option>
+                <div class="form__group">
+                    <label for="pet-type" class="form__label">Предпочтительный вид питомца:</label>
+                    <select id="pet-type" name="pet-type" class="form__select" required>
+                        <option value="cat">Кошка</option>
+                        <option value="dog">Собака</option>
+                        <option value="other">Другое</option>
                     </select>
                 </div>
 
-                <div>
-                    <label for="bio">Биография:</label>
-                    <textarea id="bio" name="bio" required></textarea>
+                <div class="form__group">
+                    <label for="experience" class="form__label">Опыт содержания животных:</label>
+                    <textarea id="experience" name="experience" class="form__textarea" required></textarea>
                 </div>
 
-                <div>
-                    <label>
-                        <input type="checkbox" name="agreement" required>
-                        С контрактом ознакомлен(а)
+                <div class="form__group">
+                    <label class="form__checkbox-label">
+                        <input type="checkbox" name="agreement" class="form__checkbox" required>
+                        Согласен с условиями опеки
                     </label>
                 </div>
 
-                <div>
-                    <button type="submit">Сохранить</button>
-                </div>
+                <button type="submit" class="form__button">Отправить заявку</button>
             </form>
         </section>
     </main>
 
-    <footer id="footer">
-        <div class="container">
-            <p>Разработка пользовательского Web-интерфейса</p>
-            <p>(с) Сергей Синица 2025</p>
+    <footer class="footer">
+        <div class="footer__content">
+            <p class="footer__text">Разработка пользовательского Web-интерфейса</p>
+            <p class="footer__text">(с) Сергей Синица 2025</p>
         </div>
     </footer>
 </body>
