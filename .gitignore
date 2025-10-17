@@ -1,0 +1,66 @@
+# Global ignores
+*.log
+*.log.*
+*.tmp
+*.swp
+*.swo
+*.DS_Store
+Thumbs.db
+
+# Node and JS tooling
+node_modules/
+**/node_modules/
+.npm/
+.pnpm-store/
+.yarn/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+.yarnrc.yml
+
+# Build caches and tool artifacts
+.vscode/
+.idea/
+*.iml
+.eslintcache
+.cache/
+**/.cache/
+coverage/
+**/coverage/
+
+# Vite/React specific (cache)
+react/.vite/
+**/.vite/
+
+# Dist and build outputs (keep react/dist tracked)
+# Ignore generic dist everywhere
+**/dist/
+# But keep the built React site
+!react/dist/
+
+# Lockfiles (optional to track, but often ignored)
+# Uncomment if you want to ignore lockfiles globally
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# OS junk
+.DS_Store
+Icon\r
+
+# Editor junk
+*.local
+.history/
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+
+# Misc
+.env
+.env.*
+*.orig
+*.rej
