@@ -15,17 +15,12 @@
     width: 100%;
     background: linear-gradient(135deg, #fce4ec, #f8d7e3); 
     box-shadow: 0 2px 8px rgba(200, 120, 150, 0.15);
-    padding: 12px 0;
+    display: flex;
+    padding-left: 40px;
+    justify-content: space-between;
   }
   
-  .header-container {
-    max-width: 960px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-  }
+
   
   .avatar {
     flex-shrink: 0;
@@ -44,8 +39,10 @@
   .header-right {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
     gap: 8px;
+    width: 100%;
+    align-items: baseline;
+    padding-left: 80px;
   }
   
   .main-nav {
@@ -300,9 +297,6 @@
   }
   
   .footer-container {
-    max-width: 960px;
-    margin: 0 auto;
-    text-align: center;
     padding: 0 20px;
   }
   
